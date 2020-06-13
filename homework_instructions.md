@@ -1,4 +1,4 @@
-# Node Express Handlebars
+<!-- # Node Express Handlebars
 
 ### Overview
 
@@ -90,21 +90,21 @@ Having an active and healthy commit history on GitHub is important for your futu
 
    * Now insert the entries you defined in `seeds.sql` by running the file: `source seeds.sql`.
 
-   * Close out of the MySQL command line tool: `exit`.
+   * Close out of the MySQL command line tool: `exit`. -->
 
 #### Config Setup
 
-1. Inside your `burger` directory, create a folder named `config`.
+<!-- 1. Inside your `burger` directory, create a folder named `config`. -->
 
-2. Create a `connection.js` file inside `config` directory.
+<!-- 2. Create a `connection.js` file inside `config` directory.
 
    * Inside the `connection.js` file, setup the code to connect Node to MySQL.
 
-   * Export the connection.
+   * Export the connection. -->
 
-3. Create an `orm.js` file inside `config` directory.
+<!-- 3. Create an `orm.js` file inside `config` directory. -->
 
-   * Import (require) `connection.js` into `orm.js`
+   <!-- * Import (require) `connection.js` into `orm.js` -->
 
    * In the `orm.js` file, create the methods that will execute the necessary MySQL commands in the controllers. These are the methods you will need to use in order to retrieve and store data in your database.
 
@@ -112,9 +112,9 @@ Having an active and healthy commit history on GitHub is important for your futu
      * `insertOne()`
      * `updateOne()`
 
-   * Export the ORM object in `module.exports`.
+   <!-- * Export the ORM object in `module.exports`. -->
 
-#### Model setup
+<!-- #### Model setup
 
 * Inside your `burger` directory, create a folder named `models`.
 
@@ -124,18 +124,18 @@ Having an active and healthy commit history on GitHub is important for your futu
 
     * Also inside `burger.js`, create the code that will call the ORM functions using burger specific input for the ORM.
 
-    * Export at the end of the `burger.js` file.
+    * Export at the end of the `burger.js` file. -->
 
-#### Controller setup
+<!-- #### Controller setup
 
 1. Inside your `burger` directory, create a folder named `controllers`.
 
-2. In `controllers`, create the `burgers_controller.js` file.
+2. In `controllers`, create the `burgers_controller.js` file. -->
 
-3. Inside the `burgers_controller.js` file, import the following:
+<!-- 3. Inside the `burgers_controller.js` file, import the following:
 
    * Express
-   * `burger.js`
+   * `burger.js` -->
 
 4. Create the `router` for the app, and export the `router` at the end of your file.
 

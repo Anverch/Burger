@@ -25,4 +25,4 @@ var burger = {
   };
 
 // Export the database functions for the controller (catsController.js).
-module.exports = burgers_db
+module.exports = burger;
