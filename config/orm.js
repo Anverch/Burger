@@ -5,6 +5,7 @@ var connection = require("../config/connection.js");
 async function selectAll(){
     const query = `SELECT * FROM burgers`;
     const result = await connection.query(query);
+    console.table(result)
     return result
 }
 
@@ -12,6 +13,7 @@ async function selectAll(){
 async function insertOne(burgerName){
     const query = `INSERT INTO burgers (burger_name) VALUES ("${burgerName}");`;
     const result = await connection.query(query)
+    console.table(result)
     return result;
 }
 
@@ -23,6 +25,7 @@ async function updateOne(id){
         WHERE id = ${id}
     `;
     const result = await connection.query(query)
+    console.table(result)
     return result;
 }
 

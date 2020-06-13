@@ -8,7 +8,7 @@ var burger = {
       return await orm.insertOne(burgerName)
     },
     update: async (burgerId)=> {
-      return await orm.insertOne(burgerId)
+      return await orm.updateOne(burgerId)
     },
   };
 
