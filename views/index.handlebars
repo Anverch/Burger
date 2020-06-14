@@ -3,6 +3,10 @@
 <img src="/assets/img/burger.jpg" height="200">
 </div>
 
+{{#if error}}
+  <div>{{error}}</div>
+{{/if}}
+
 <div class="col-md-6">
 <ul>
   {{#each burgers}}
