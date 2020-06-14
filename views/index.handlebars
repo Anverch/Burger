@@ -1,6 +1,9 @@
 <h1>Eat-Da-Burger</h1>
-<img src="/assets/img/burger.jpg" height="200" class="center-block">
+<div class="center">
+<img src="/assets/img/burger.jpg" height="200">
+</div>
 
+<div class="col-md-6">
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
@@ -8,15 +11,17 @@
     {{/unless}}
   {{/each}}
 </ul>
+</div>
 
+<div class="col-md-6">
 <ul>
   {{#each burgers}}
     {{#if devoured}}
       <li>{{this.burger_name}}</li>
     {{/if}}
-
   {{/each}}
 </ul>
+</div>
 
 <form class="create-form">
 

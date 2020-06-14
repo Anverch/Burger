@@ -15,13 +15,18 @@ router.post("/api/burger", async (req, res)=> {
   console.log(req)
   const response = await burger.create(req.body.data.burgerName);
   console.log(response);
-  res.render("index");
+  res.json({
+    status: 200
+  });
 });
 
 router.put("/api/burger/:id", async (req, res)=> {
+  console.log(req)
   const response = await burger.update(req.params.id);
   console.log(response);
-  res.render("index");
+  res.json({
+    status: 200
+  });
 });
 
 module.exports = router;
